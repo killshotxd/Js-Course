@@ -295,6 +295,48 @@ for (var num = 1; num <= 10; num++) {
   console.log(`8 * ${num} = ` + num * 8);
 }
 
-*/
 
 // Functions in Javascript
+
+// Block of code designed to perform a task
+
+function add(a, b) {
+  console.log(a + b);
+}
+
+add(10, 20);
+
+
+
+
+//Function expression
+// create a function and put it into the variable
+
+function add(a, b) {
+  console.log(a + b);
+}
+
+var funExp = add(100, 20);
+funExp;
+
+
+// Return Keyword
+
+function add(a, b) {
+  return (total = a + b);
+}
+
+var funExp = add(10, 20);
+console.log(funExp);
+
+
+
+//Anonymous Function
+
+var funExp = function (a, b) {
+  return (total = a + b);
+};
+
+console.log(funExp(2, 3));
+
+*/
