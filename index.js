@@ -202,7 +202,7 @@ if ((score = 1)) {
   console.log("OMG, We lost the game");
 }
 
-*/
+
 
 //Conditional (ternary) opearators
 // takes three operands
@@ -210,3 +210,51 @@ if ((score = 1)) {
 // variableName = (Condition) ? value1:value2
 
 //Shorter Version of if else
+
+var age = 18;
+console.log(age >= 18 ? "You can vote" : "You cannot vote");
+
+
+// Switch Statement
+
+// Find the area of circle, triangle and rectangle
+
+var area = "circle";
+var PI = 3.142,
+  l = 5,
+  b = 4,
+  r = 3;
+
+if (area == "circle") {
+  console.log("The area of the circle is : " + PI * r ** 2);
+} else if (area == "triangle") {
+  console.log("The area of the triangle is : " + (l * b) / 2);
+} else if (area == "rectangle") {
+  console.log("The area of the rectangle is : " + l * b);
+} else {
+  console.log("Please enter valid Data");
+}
+*/
+var area = "circle";
+var PI = 3.142,
+  l = 5,
+  b = 4,
+  r = 3;
+
+// NoW using switch statement
+
+switch (area) {
+  case "circle":
+    console.log("The area of the circle is : " + PI * r ** 2);
+    break;
+  case "triangle":
+    console.log("The area of the triangle is : " + (l * b) / 2);
+    break;
+
+  case "rectangle":
+    console.log("The area of the rectangle is : " + l * b);
+    break;
+
+  default:
+    console.log("Please enter valid Data");
+}
