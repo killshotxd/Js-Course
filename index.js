@@ -234,7 +234,7 @@ if (area == "circle") {
 } else {
   console.log("Please enter valid Data");
 }
-*/
+
 var area = "circle";
 var PI = 3.142,
   l = 5,
@@ -258,3 +258,43 @@ switch (area) {
   default:
     console.log("Please enter valid Data");
 }
+
+
+
+// While loop 2h:46m
+
+var num = 0;
+
+while (num <= 10) {
+  console.log(num);
+  num++;
+}
+
+
+// do-while loop
+
+var num = 0;
+
+do {
+  console.log(num);
+  num++;
+} while (num <= 10);
+
+
+
+// For loop
+
+for (var num = 0; num <= 10; num++) {
+  console.log(num);
+}
+
+
+//Table Challenge
+
+for (var num = 1; num <= 10; num++) {
+  console.log(`8 * ${num} = ` + num * 8);
+}
+
+*/
+
+// Functions in Javascript
