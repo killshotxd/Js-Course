@@ -339,4 +339,14 @@ var funExp = function (a, b) {
 
 console.log(funExp(2, 3));
 
+
+
+// Fat Arrow Function
+
+const add = (a, b) => {
+  console.log(a + b);
+};
+
+add(20, 3);
+
 */
