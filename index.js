@@ -349,4 +349,36 @@ const add = (a, b) => {
 
 add(20, 3);
 
+
+
+// Arrays in Javascript
+
+var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
+var myInfo = ["Mohd", 7071707194, "Mangoes", "Happy"];
+
+console.log(myInfo[1]);
+
+
+
+//Traversal in Array
+
+var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
+
+// for (fruit in fruits) {
+//   console.log(fruit);
+// }
+
+for (fruit of fruits) {
+  console.log(fruit);
+}
+
+
+
+//For each loop
+
+var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
+
+fruits.forEach(function (element, index, array) {
+  console.log(element + "index : " + index + " " + array);
+});
 */
