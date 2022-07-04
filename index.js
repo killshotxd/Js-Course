@@ -576,4 +576,60 @@ function multiplyGreater2(value) {
   }
 }
 
+
+
+// Map and Reduce Method
+
+//Array.prototype.map()
+
+//Returns new array
+
+const array1 = [1, 4, 9, 16, 25];
+
+let newArr = array1.map((currElem, index, arr) => {
+  return currElem > 9;
+});
+
+console.log(newArr);
+
+
+
+const array1 = [1, 4, 9, 16, 25];
+
+let newArr = array1.map((currElem, index, arr) => {
+  return `Index no. = ${index} and the value is ${currElem}`;
+});
+
+console.log(newArr);
+
+
+
+// Challenge by map method
+
+let arr = [25, 36, 49, 64, 81];
+
+let arrSqr = arr.map((currElem) => {
+  return Math.sqrt(currElem);
+});
+
+console.log(arrSqr);
+
+
+
+let arr = [2, 3, 4, , 6, 8];
+
+let arrMulti = arr
+  .map((currElem) => {
+    return currElem * 2;
+  })
+  .filter((currElem) => {
+    return currElem > 10;
+  });
+
+console.log(arrMulti);
+
 */
+
+// Reduce Method 6h22m
+
+//Flatten an Array means to convert the 3d or 2d array into single dimensional array
