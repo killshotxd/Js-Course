@@ -694,4 +694,42 @@ let flatArrr = arr.reduce((accum, currVal) => {
 
 console.log(flatArrr);
 
+
+
+// STRINGS IN JAVASCRIPT
+
+// Finding a string in a string
+
+const myBio = "I am Killshotxd";
+
+console.log(myBio.indexOf("Killshotxd"));
+
+
+
+const myBio = "I am Killshotxd";
+
+console.log(myBio.lastIndexOf("l", 5));
+
+
+// Searching for a string in a string
+
+const myBio = "I am Killshotxd";
+
+console.log(myBio.search("am"));
+
+
+
+
+// Extracting String Parts
+
+//There are 3 methods
+
+//Slice(start, end)
+//substring(start, end)
+//substr(start, length)
+
+//******* THE SLICE METHOD ********* 7h
+
+var str = "apple, banana, kiwi";
+
 */
