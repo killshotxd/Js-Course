@@ -628,8 +628,44 @@ let arrMulti = arr
 
 console.log(arrMulti);
 
-*/
+
 
 // Reduce Method 6h22m
 
 //Flatten an Array means to convert the 3d or 2d array into single dimensional array
+
+let arr = [5, 6, 2];
+
+let sum = arr.reduce((accumulator, currElem, index, arr) => {
+  return (accumulator += currElem);
+});
+
+console.log(sum);
+
+//Chaining
+
+let arr = [2, 3, 4, , 6, 8];
+
+let arrMulti = arr
+  .map((currElem) => {
+    return currElem * 2;
+  })
+  .filter((currElem) => {
+    return currElem > 10;
+  })
+  .reduce((accumulator, currElem, index, arr) => {
+    return (accumulator += currElem);
+  });
+
+console.log(arrMulti);
+
+
+
+let arr = [5, 6, 2];
+
+let sum = arr.reduce((accumulator, currElem, index, arr) => {
+  return (accumulator *= currElem);
+});
+
+console.log(sum);
+*/
