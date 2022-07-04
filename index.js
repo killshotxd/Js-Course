@@ -381,4 +381,85 @@ var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
 fruits.forEach(function (element, index, array) {
   console.log(element + "index : " + index + " " + array);
 });
+
+
+//Search and filter in array 4h:54m
+
+//Array.prototype.indexOf()  =>
+
+var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
+
+console.log(fruits.indexOf("Mangoes"));
+
+//Returns -1 if none is found
+
+
+
+//Array.prototype.lastIndexOf() =>
+
+var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
+
+console.log(fruits.lastIndexOf("Mangoes"));
+
+
+
+//Array.prototype.includes() =>
+//Always do forward Search
+var fruits = ["Apple", "Kiwi", "Mangoes", "Watermelon"];
+
+console.log(fruits.includes("Kiwi"));
+
+
+
+//Array.prototype.find()
+
+// arr.find(callback(element[, index[, array]])[, thisArg])
+//Returns only one element
+
+const prices = [200, 300, 400, 500, 600, 650];
+
+const findElem = prices.find((currVal) => {
+  return currVal <= 400;
+});
+
+console.log(findElem);
+
+
+// Array.prototype.findIndex()
+
+const prices = [200, 300, 400, 500, 600, 650];
+
+console.log(prices.findIndex((currVal) => currVal < 400));
+
+
+
+// Array.prototype.filter()
+
+//Returns a new array containing all elements of the calling
+//array for which the provided filtering function returns true
+
+const prices = [200, 300, 350, 400, 500, 600, 650];
+
+const newPrice = prices.filter((elem, index) => {
+  return elem < 400;
+});
+
+console.log(newPrice);
+
+//Returns empty array if condition not satisfied
+
+
+
+// How to sort an array
+
+// Array.prototype.sort()
+
+const months = ["March", "Jan", "Feb", "Dec", "Nov"];
+
+console.log(months.sort());
+
+const array1 = [1, 37, 3, 4, 56, 67, 3, 3, 2];
+
+console.log(array1.sort());
+
 */
