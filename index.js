@@ -462,4 +462,118 @@ const array1 = [1, 37, 3, 4, 56, 67, 3, 3, 2];
 
 console.log(array1.sort());
 
+
+
+//Array Subsection 4 😘 Perform CRUD
+
+//Array.prototype.push()
+
+//Push method adds elem at end of the array
+
+const animals = ["chicken", "goat", "sheep"];
+console.log(animals);
+
+const count = animals.push("rice");
+console.log(animals);
+console.log(count);
+
+animals.push("rice", "wheat", "Barley");
+console.log(animals);
+
+
+
+// Array.prototype.unshift()
+
+// Adds at beginning of array
+
+const animals = ["chicken", "goat", "sheep"];
+animals.unshift("rice", "wheat", "Barley");
+console.log(animals);
+
+
+
+//Array .prototype.pop()
+
+//Removes last element from an array
+//Changes length of the array
+
+const plants = [
+  "brocolli",
+  "cauliflower",
+  "kela",
+  "tomato",
+  "cabbage",
+  "bhindi",
+];
+
+console.log(plants);
+plants.pop();
+console.log(plants);
+plants.pop();
+console.log(plants);
+
+
+
+// Challenge time
+
+const months = ["Jan", "march", "April", "June", "July"];
+console.log(months);
+
+//1 : Add dec at end of the array
+
+months.push("Dec");
+
+console.log(months);
+
+//2 update march to March
+
+// const stringMonths = months.toString();
+// console.log(stringMonths);
+
+// const updatedMonths = stringMonths.toUpperCase().split(",");
+// console.log(updatedMonths);
+
+
+const months = ["Jan", "march", "April", "June", "July"];
+console.log(months);
+
+//1 : Add dec at end of the array
+
+months.splice(months.length, 0, "Dec");
+console.log(months);
+
+//3 update march to March
+
+const updateMonth = months.splice(1, 1, "March");
+console.log(months);
+
+
+
+// Challenge Time
+
+// 1 - Find the sq root of each element in an array?
+
+let arr = [25, 36, 49, 64, 81];
+
+arr.forEach(squareRoot);
+
+function squareRoot(value) {
+  console.log(Math.sqrt(value));
+}
+
+
+// 2 - Multiply each element by 2 and return only those elements which are greater than 10?
+
+let arr = [2, 3, 4, , 6, 8];
+
+arr.forEach(multiplyGreater2);
+
+function multiplyGreater2(value) {
+  const newArr = value * 2;
+
+  if (newArr > 10) {
+    console.log(newArr);
+  }
+}
+
 */
