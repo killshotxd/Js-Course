@@ -668,4 +668,30 @@ let sum = arr.reduce((accumulator, currElem, index, arr) => {
 });
 
 console.log(sum);
+
+
+// How to flatten an array
+
+//Converting 2d and 3d array into one dimensional array
+
+const arr = [
+  [
+    "zone1",
+    "zone3",
+    "zone4",
+    "zone5",
+    "zone6",
+    "zone7",
+    "zone8",
+    "zone9",
+    "zone10",
+  ],
+];
+
+let flatArrr = arr.reduce((accum, currVal) => {
+  return accum.concat(currVal);
+});
+
+console.log(flatArrr);
+
 */
