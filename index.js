@@ -730,6 +730,80 @@ console.log(myBio.search("am"));
 
 //******* THE SLICE METHOD ********* 7h
 
+
+
 var str = "apple, banana, kiwi";
+
+// let res = str.slice(0, 4);
+let res = str.slice(7);
+console.log(res);
+
+
+// Challenge Time
+
+//Display only 280 char
+
+let myTweets =
+  "lorem IJSKJSKDKSDJKSD JDSKDJSDKDJSDJKDJSDDJ JDKSDJSDJKSDJSAAAXAJXOAXJOAXAXAX XJOAXJAOXJAOXJAXOAJXOAXJAOJXAOX X XAJXOAXJAOXAXJAOXJXJAOXJAOXAX XJOXAJXOAJXAJXOAXJOAXJAXJOAXJAXJOAXJAOXJAXOAXJOAXJXJDKSDJSDJKSDJSAAAXAJXOAXJOAXAXAX XJOAXJAOXJAOXJAXOAJXOAXJAOJXAOX X XAJXOAXJAOXAXJAOXJXJAOXJAOXAX XJOXAJXOAJXAJXOAXJOAXJAXJOAXJAXJOAXJAOXJAXOAXJOAXJX XOAJXOAXOAJO WHY DO WE USE IT";
+
+let myActualTweet = myTweets.slice(0, 280);
+console.log(myActualTweet);
+console.log(myTweets.length);
+console.log(myActualTweet.length);
+
+
+
+// The Substring Method
+
+var str = "apple, banana, kiwi";
+
+let res = str.substring(0, 4);
+console.log(res);
+
+
+
+
+// The substr Method deprecated
+
+
+
+// REPLACING STRING CONTENT
+
+// String.prototype.replace(searchFor, replaceWith)
+
+let myBio = "I am Killshotxd";
+
+let myNewBio = myBio.replace("Killshotxd", "Mohd");
+console.log(myNewBio);
+
+
+
+let myBio = "I Killshotxd am Killshotxd";
+
+let myNewBio = myBio.replaceAll("Killshotxd", "Mohd");
+console.log(myNewBio);
+
+
+
+// Extracting string characters
+
+// 1- charAt()
+
+let str = "HELLO WORLD";
+console.log(str.charAt(0));
+
+
+
+// 2- charCodeAt()
+
+let str = "HELLO WORLD";
+console.log(str.charCodeAt(str.length - 1));
+
+
+// 3- Property access
+
+var str = "HELLO WORLD";
+console.log(str[0]);
+console.log(str[1]);
 
 */
