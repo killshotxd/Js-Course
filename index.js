@@ -806,4 +806,40 @@ var str = "HELLO WORLD";
 console.log(str[0]);
 console.log(str[1]);
 
+
+// Other Useful methods
+
+let myName = "Mr kILLshotxD";
+console.log(myName.toLowerCase());
+console.log(myName.toUpperCase());
+
+// The Concat method
+
+let fName = "Mr";
+let lName = "Killshot";
+
+console.log(fName.concat(lName));
+console.log(fName.concat(" ", lName));
+console.log(fName + lName);
+console.log(`${fName} ${lName}`);
+
+
+
+// String.trim()
+
+var str = "              Hello";
+console.log(str);
+console.log(str.trim());
+
+
+
+// Converting a String to array
+
+//split method
+
+var txt = "a,b,c,d,e,f,g"; // String
+console.log(txt.split(",")); // Split on commas
+console.log(txt.split(" ")); // Split on spaces
+console.log(txt.split("|")); // Split on pipe
+
 */
