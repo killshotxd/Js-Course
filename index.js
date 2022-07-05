@@ -907,4 +907,76 @@ console.log(new Date().toLocaleDateString()); // 5/7/2022
 //--
 console.log(new Date().toLocaleString()); // 5/7/2022, 10:00:56 am
 
+
+
+//****** MATH OBJECT **********
+//----- 8h16m----------
+
+console.log(Math.PI);
+
+// Math.round()
+let num = 10.365;
+console.log(Math.round(num));
+
+// Math.pow
+// returns the value of x to the power of y
+
+console.log(Math.pow(2, 3));
+console.log(2 ** 3);
+
+
+
+//Math.sqrt()
+
+console.log(Math.sqrt(25));
+console.log(Math.sqrt(36));
+console.log(Math.sqrt(81));
+console.log(Math.sqrt(66));
+
+
+
+//Math.abs()
+//Math.abs(x) returns the absolute (positive) value of x
+
+console.log(Math.abs(-55));
+console.log(Math.abs(-55.5));
+console.log(Math.abs(-955));
+console.log(4-9);
+console.log(Math.abs(4-9));
+
+
+
+// Math.ceil()
+// Math.ceil(x) returns the value of x rounded up to its nearest integer
+
+console.log(Math.ceil(4.4));
+console.log(Math.ceil(99.1));
+
+// Math.floor
+
+console.log(Math.floor(4.4));
+console.log(Math.floor(99.1));
+
+
+
+// Math.min()
+// Math.max()
+
+console.log(Math.min(10, 20, 1560, 3, 0325, 44));
+console.log(Math.max(10, 20, 1560, 3, 0325, 44));
+
+
+
+// ------Math.random()---------
+
+console.log(Math.floor(Math.random() * 10));
+
+
+
+// Math.trunc
+// Returns integer part of the number
+
+console.log(Math.trunc(4.5));
+console.log(Math.trunc(-99.1));
+
 */
