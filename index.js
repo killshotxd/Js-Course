@@ -842,4 +842,69 @@ console.log(txt.split(",")); // Split on commas
 console.log(txt.split(" ")); // Split on spaces
 console.log(txt.split("|")); // Split on pipe
 
+
+
+// Date & Time in JavaScript
+
+// Creating date objects
+// 4 ways
+
+new Date()
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+new Date(milliseconds)
+new Date(date string)
+
+
+
+// 1 - new Date()
+
+let currDate = new Date();
+console.log(currDate); // 2022-07-05T04:17:32.233Z
+console.log(new Date().toLocaleString()); //5/7/2022, 9:47:32 am
+console.log(new Date().toString()); // Tue Jul 05 2022 09:47:32 GMT+0530 (India Standard Time)
+
+
+
+// 2- Date.now()
+
+console.log(Date.now());
+
+
+
+// 3 - new Date(year, month, ......)
+
+var d = new Date(2022, 11, 24, 10, 33, 30, 0);
+console.log(d); //2022-12-24T05:03:30.000Z
+console.log(d.toLocaleString()); // 24/12/2022, 10:33:30 am
+
+
+
+// new Date(dateString)
+
+var d = new Date("August 1, 2000 11:13:00");
+console.log(d);
+console.log(d.toLocaleString());
+
+
+
+// Dates Method
+
+const currDate = new Date();
+
+console.log(currDate.toLocaleString());
+console.log(currDate.getFullYear());
+console.log(currDate.getMonth());
+console.log(currDate.getDate());
+console.log(currDate.getDay());
+
+
+
+// Practice Time
+
+console.log(new Date().toLocaleTimeString()); // 10:00:09 am
+//--
+console.log(new Date().toLocaleDateString()); // 5/7/2022
+//--
+console.log(new Date().toLocaleString()); // 5/7/2022, 10:00:56 am
+
 */
