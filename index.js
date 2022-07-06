@@ -1138,4 +1138,21 @@ const myFavColors = [...colors, "Yellow", "violet"];
 console.log(myFavColors);
 
 
+
+
+// Es8 features
+
+// String Padding
+
+// const message = "my name is killshotxd";
+
+// console.log(message.padStart(5));
+// console.log(message.padStart(10));
+
+// Object Values
+
+const person = { name: "Kill", age: 90 };
+console.log(Object.values(person));
+console.log(Object.entries(person));
+
 */
