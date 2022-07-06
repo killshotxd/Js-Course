@@ -1073,8 +1073,34 @@ const obj = {
 };
 obj.myName();
 
-*/
+
 
 // this will not work with arrow function
 
 // Destructuring in ES6 11h17m
+
+// Array Destructuring
+
+const myBioData = ["Mr", "Killahot", 20];
+
+let [fName, lName, myAge] = myBioData;
+
+console.log(fName);
+
+
+
+// Object Destructuring
+
+const myBioData = {
+  fName: "Mr",
+  lName: "Killshot",
+  myAge: 20,
+};
+
+let { fName, lName, myAge } = myBioData;
+
+console.log(fName);
+
+*/
+
+// Object Properties 11h26m
