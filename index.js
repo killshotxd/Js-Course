@@ -979,4 +979,102 @@ console.log(Math.floor(Math.random() * 10));
 console.log(Math.trunc(4.5));
 console.log(Math.trunc(-99.1));
 
+
+
+// -------DOM in JavaScript------
+
+// Events in JavaScript
+
+// 10h27m
+
+// Objects  10h:50m
+
+// key : value pair data structure
+
+//1 - way
+
+let bioData = {
+  myName: "Killshot",
+  age: 20,
+  getData: function () {
+    console.log(`My name is ${bioData.myName} and my age is ${bioData.age}`);
+  },
+};
+
+bioData.getData();
+
+
+
+
+// 2- way
+
+let bioData = {
+  myName: "Killshot",
+  age: 20,
+  getData() {
+    console.log(`My name is ${bioData.myName} and my age is ${bioData.age}`);
+  },
+};
+
+bioData.getData();
+
+
+
+// Object as a value inside an object
+
+let bioData = {
+  myName: {
+    fName: "Mr",
+    lName: "Killshot",
+  },
+  age: 20,
+  getData() {
+    console.log(
+      `My name is ${
+        bioData.myName.fName + " " + bioData.myName.lName
+      } and my age is ${bioData.age}`
+    );
+  },
+};
+
+bioData.getData();
+
+
+
+// What is this object?
+
+// The definition of "this" object is that it contains the current context
+
+// The this object can have different values depending on where it is placed
+
+// Example 1
+console.log(this.alert("Awesome"));
+
+// it refers to the current context and that is the window global object
+
+
+
+let myName = "Killshot";
+function myNames() {
+  console.log(this.myName);
+}
+
+myNames();
+
+// Undefined
+
+
+
+const obj = {
+  myAge: 20,
+  myName() {
+    console.log(this.myAge);
+  },
+};
+obj.myName();
+
 */
+
+// this will not work with arrow function
+
+// Destructuring in ES6 11h17m
