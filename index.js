@@ -1101,6 +1101,41 @@ let { fName, lName, myAge } = myBioData;
 
 console.log(fName);
 
-*/
+
 
 // Object Properties 11h26m
+
+// We can use Dynamic Properties
+
+let myName = "Killshot";
+const myBio = {
+  [myName]: "Hello how are you?",
+  [30 - 10]: "is my age",
+};
+console.log(myBio);
+
+
+// no need to write key and value , if both are same
+
+let myName = "Mr Killshotxd";
+let myAge = 20;
+
+const myBio = {
+  myName,
+  myAge,
+};
+
+console.log(myBio);
+
+
+
+// Spread Operator
+
+const colors = ["red", "green", "blue", "white"];
+
+const myFavColors = [...colors, "Yellow", "violet"];
+
+console.log(myFavColors);
+
+
+*/
